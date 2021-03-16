@@ -53,8 +53,8 @@ export const NAVIGATION = [
     route: '/diversity'
   },
   {
-    name: 'Manifest',
-    route: '/manifest'
+    name: 'Manifesto',
+    route: '/manifesto'
   },
   {
     name: 'Community',
