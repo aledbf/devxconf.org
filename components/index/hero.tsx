@@ -54,39 +54,30 @@ export default function Hero() {
           The first <span className={styles.brand}>{BRAND_NAME}</span>
           <br className={styleUtils['show-on-desktop']} /> conference
         </h1>
-        <div
-          className={cn(
-            styles.info,
-            'heading-quadrary'
-          )}
-        >
+        <div className={cn(styles.info, 'heading-quadrary')}>
           <span>{DATE}</span>
           &nbsp;-&nbsp;
           <span>Virtual</span>
         </div>
-        {!isRegisterWithEmailSelected ? (
-          <RegisterButton />
-        ) : (
-          <Popup
-            isShown={isRegisterWithEmailSelected}
-            setIsShown={setIsRegisterWithEmailSelected}
-            bodyStyles={{ display: 'flex', justifyContent: 'center' }}
-          >
-            <RegisterWithEmail />
-          </Popup>
-        )}
 
-        {!isRegisterWithEmailSelected ? (
-          <p className={styles.footnote}>
-            <button
-              className={styles['register-with-email']}
-              onClick={() => setIsRegisterWithEmailSelected(true)}
-            >
-              Register via email
-            </button>
-          </p>
-        ) : null}
-        {!isRegisterWithEmailSelected ? <ConsentNote /> : null}
+        <RegisterButton />
+        <Popup
+          isShown={isRegisterWithEmailSelected}
+          setIsShown={setIsRegisterWithEmailSelected}
+          bodyStyles={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <RegisterWithEmail />
+        </Popup>
+
+        <p className={styles.footnote}>
+          <button
+            className={styles['register-with-email']}
+            onClick={() => setIsRegisterWithEmailSelected(true)}
+          >
+            Register via email
+          </button>
+        </p>
+        <ConsentNote />
       </div>
       <PatternHalfCircle
         isInverted={true}
