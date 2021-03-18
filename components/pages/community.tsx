@@ -35,7 +35,7 @@ const Community = () => (
           target="_blank"
           className={cn('btn btn--big', styles.link)}
         >
-          Go to <DiscordLogo />
+          Go to <span className="btn--big__text">Discord</span> <DiscordLogo />
         </a>
 
         <div className={styles.channels}>

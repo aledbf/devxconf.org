@@ -7,3 +7,9 @@
     align-items: center;
     margin-bottom: var(--gutter-huge) 0;
 }
+
+@media(max-width: 320px) {
+    .btn-wrapper > * {
+        display: inline-block;
+    }
+}

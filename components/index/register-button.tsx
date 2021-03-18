@@ -71,7 +71,7 @@ const RegisterButton = () => {
   return (
     <div className={styles['btn-wrapper']}>
       <button className="btn btn--big" onClick={() => handleAuthorization()}>
-        Register with <GitHubLogo />
+        Register with <span className="btn--big__text">GitHub</span> <GitHubLogo />
       </button>
     </div>
   );
