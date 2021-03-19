@@ -54,6 +54,12 @@
     }
 }
 
+@media(min-width: 768px) {
+    .section {
+        padding-top: var(--gutter-huge);
+    }
+}
+
 @media(max-width: 360px) {
     .header {
         width: auto;
